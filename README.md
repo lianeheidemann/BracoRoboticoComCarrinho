@@ -1,4 +1,4 @@
-# Carrinho com Braço Articulado utilizando Arduino
+# Carrinho com Braço Articulado Utilizando Arduino
 
 Foto do Projeto:
 
