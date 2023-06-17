@@ -33,7 +33,9 @@ void loop(){
         //Carrinho ir para FRENTE 
         if (val == 'G') {
             digitalWrite(Pin4,LOW);
-            digitalWrite(Pin5,HIGH); digitalWrite(Pin6,LOW); digitalWrite(Pin7,HIGH);
+            digitalWrite(Pin5,HIGH); 
+            digitalWrite(Pin6,LOW); 
+            digitalWrite(Pin7,HIGH);
         }
         //Carrinho ir para TRÁS
         else if (val == 'F') {
@@ -68,10 +70,12 @@ void loop(){
         //Garra FECHAR
         if(val=='8') {
             for (servo1=100; servo1 <= 130; servo1 += 1) {
-                myservo1.write(servo1); delay(15);
+                myservo1.write(servo1); 
+                delay(15);
             }
             for (servo2=80; servo2 >= 60; servo2 -= 1) {
-                myservo2.write(servo2);    //angulo 60 delay(15);
+                myservo2.write(servo2);    //angulo 60 
+                delay(15);
             }
         }
         //Garra ABRIR
