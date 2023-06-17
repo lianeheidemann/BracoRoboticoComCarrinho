@@ -33,6 +33,7 @@ void setup(){
 
 void loop(){
     if (Serial.available()>0) {
+        //Lê a opção selecionada no aplicativo
         val = Serial.read();
         
         //Carrinho ir para FRENTE 
