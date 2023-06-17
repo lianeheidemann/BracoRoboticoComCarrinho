@@ -3,7 +3,7 @@
 Servo myservo1, myservo2; 
 int pos = 0;
 int servo1 = 100; //Abrir e fechar GARRA
-int servo2 = 80;
+int servo2 = 80; //Subir e descer BRAÇO
 int Pin4 = 4; 
 int Pin5 = 5; 
 int Pin6 = 6; 
@@ -66,7 +66,7 @@ void loop(){
             digitalWrite(Pin7,LOW);
         }
         
-        //FECHAR garra e SUBIR braço 
+        //FECHAR garra
         if(val=='8') {
             for (servo1=100; servo1 <= 130; servo1 += 1) {
                 delay(150);
@@ -77,7 +77,7 @@ void loop(){
                 myservo2.write(servo2);    //angulo 60°           
             }
         }
-        //ABAIXAR braço e ABRIR garra
+        //ABRIR garra 
         else if (val=='7') {
             delay(150);
             myservo1.write(100); 
