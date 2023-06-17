@@ -74,7 +74,7 @@ void loop(){
                 delay(15);
             }
             for (servo2=80; servo2 >= 60; servo2 -= 1) {
-                myservo2.write(servo2);    //angulo 60 
+                myservo2.write(servo2);    //angulo 60°
                 delay(15);
             }
         }
