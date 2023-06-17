@@ -59,8 +59,7 @@ void loop(){
             digitalWrite(Pin7,LOW);
         }
         //Carrinho virar para DIREITA 
-        else if (val == 'L')
-        {
+        else if (val == 'L') {
             digitalWrite(Pin4,LOW); 
             digitalWrite(Pin5,LOW); 
             digitalWrite(Pin6,HIGH); 
@@ -79,7 +78,7 @@ void loop(){
             }
         }
         //Garra ABRIR
-        else if (val=='7'){
+        else if (val=='7') {
             myservo1.write(100); 
             myservo2.write(80);
         }
