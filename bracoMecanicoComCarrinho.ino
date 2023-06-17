@@ -77,7 +77,7 @@ void loop(){
                 myservo2.write(servo2);    //angulo 60°           
             }
         }
-        //ABRIR garra e ABAIXAR braço
+        //ABAIXAR braço e ABRIR garra
         else if (val=='7') {
             delay(150);
             myservo1.write(100); 
