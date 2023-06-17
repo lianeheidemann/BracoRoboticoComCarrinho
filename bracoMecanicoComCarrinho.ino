@@ -33,6 +33,7 @@ void setup(){
 
 void loop(){
     if (Serial.available()>0) {
+
         //Lê a OPÇÃO selecionada no APLICATIVO
         val = Serial.read();
         
