@@ -35,6 +35,7 @@ void loop(){
     if (Serial.available()>0) {
 
         //Lê a OPÇÃO selecionada no APLICATIVO
+        //que simula um JOYSTICK
         val = Serial.read();
         
         //Carrinho ir para FRENTE 
