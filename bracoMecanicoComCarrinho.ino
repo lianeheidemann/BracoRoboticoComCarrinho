@@ -81,6 +81,7 @@ void loop(){
         else if (val=='7') {
             myservo1.write(100); 
             myservo2.write(80);
+            delay(150);
         }
     }
 }
