@@ -1,4 +1,4 @@
-8#include <Servo.h>
+#include <Servo.h>
 
 Servo myservo1, myservo2; 
 int pos = 0;
