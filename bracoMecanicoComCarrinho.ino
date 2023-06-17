@@ -66,7 +66,7 @@ void loop(){
             digitalWrite(Pin7,LOW);
         }
         
-        //Garra FECHAR
+        //FECHAR garra e SUBIR braço 
         if(val=='8') {
             for (servo1=100; servo1 <= 130; servo1 += 1) {
                 delay(150);
@@ -77,7 +77,7 @@ void loop(){
                 myservo2.write(servo2);    //angulo 60°           
             }
         }
-        //Garra ABRIR
+        //ABRIR garra e ABAIXAR braço
         else if (val=='7') {
             delay(150);
             myservo1.write(100); 
