@@ -1,4 +1,4 @@
-#include <Servo.h>
+8#include <Servo.h>
 
 Servo myservo1, myservo2; 
 int pos = 0;
@@ -37,20 +37,32 @@ void loop(){
         }
         //Carrinho ir para TRÁS
         else if (val == 'F') {
-            digitalWrite(Pin4,HIGH); digitalWrite(Pin5,LOW); digitalWrite(Pin6,HIGH); digitalWrite(Pin7,LOW);
+            digitalWrite(Pin4,HIGH);
+            digitalWrite(Pin5,LOW);
+            digitalWrite(Pin6,HIGH);
+            digitalWrite(Pin7,LOW);
         }
         //Carrinho PARAR
         else if (val == 'S') {
-            digitalWrite(Pin4,LOW); digitalWrite(Pin5,LOW); digitalWrite(Pin6,LOW); digitalWrite(Pin7,LOW);
+            digitalWrite(Pin4,LOW); 
+            digitalWrite(Pin5,LOW); 
+            digitalWrite(Pin6,LOW); 
+            digitalWrite(Pin7,LOW);
         }
         //Carrinho virar para ESQUERDA 
         else if (val == 'R') {
-            digitalWrite(Pin4,HIGH); digitalWrite(Pin5,LOW); digitalWrite(Pin6,LOW); digitalWrite(Pin7,LOW);
+            digitalWrite(Pin4,HIGH); 
+            digitalWrite(Pin5,LOW); 
+            digitalWrite(Pin6,LOW); 
+            digitalWrite(Pin7,LOW);
         }
         //Carrinho virar para DIREITA 
         else if (val == 'L')
         {
-            digitalWrite(Pin4,LOW); digitalWrite(Pin5,LOW); digitalWrite(Pin6,HIGH); digitalWrite(Pin7,LOW);
+            digitalWrite(Pin4,LOW); 
+            digitalWrite(Pin5,LOW); 
+            digitalWrite(Pin6,HIGH); 
+            digitalWrite(Pin7,LOW);
         }
         
         //Garra FECHAR
@@ -64,7 +76,8 @@ void loop(){
         }
         //Garra ABRIR
         else if (val=='7'){
-            myservo1.write(100); myservo2.write(80);
+            myservo1.write(100); 
+            myservo2.write(80);
         }
     }
 }
