@@ -82,7 +82,6 @@ void loop(){
             delay(150);
             myservo1.write(100); 
             myservo2.write(80);
-            
         }
     }
 }
