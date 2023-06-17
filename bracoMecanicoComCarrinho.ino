@@ -2,7 +2,7 @@
 
 Servo myservo1, myservo2; 
 int pos = 0;
-int servo1 = 100; 
+int servo1 = 100; //GARRA
 int servo2 = 80;
 int Pin4 = 4; 
 int Pin5 = 5; 
