@@ -71,11 +71,11 @@ void loop(){
         if(val=='8') {
             for (servo1=100; servo1 <= 130; servo1 += 1) {
                 myservo1.write(servo1); 
-                delay(15);
+                delay(150);
             }
             for (servo2=80; servo2 >= 60; servo2 -= 1) {
                 myservo2.write(servo2);    //angulo 60°
-                delay(15);
+                delay(150);
             }
         }
         //Garra ABRIR
