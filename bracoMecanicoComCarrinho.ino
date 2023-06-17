@@ -69,19 +69,20 @@ void loop(){
         //Garra FECHAR
         if(val=='8') {
             for (servo1=100; servo1 <= 130; servo1 += 1) {
-                myservo1.write(servo1); 
                 delay(150);
+                myservo1.write(servo1); 
             }
             for (servo2=80; servo2 >= 60; servo2 -= 1) {
-                myservo2.write(servo2);    //angulo 60°
                 delay(150);
+                myservo2.write(servo2);    //angulo 60°           
             }
         }
         //Garra ABRIR
         else if (val=='7') {
+            delay(150);
             myservo1.write(100); 
             myservo2.write(80);
-            delay(150);
+            
         }
     }
 }
