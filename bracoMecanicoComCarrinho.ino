@@ -1,14 +1,17 @@
 #include <Servo.h>
 
-Servo myservo1, myservo2; 
+Servo myservo1; //Abre e fecha GARRA
+Servo myservo2; //Sobe e dece BRAÇO 
 int pos = 0;
-int servo1 = 100; //Abrir e fechar GARRA
-int servo2 = 80; //Subir e descer BRAÇO
+int servo1 = 100; //Angulo GARRA
+int servo2 = 80; //Angulo BRAÇO
+//CARRINHO
 int Pin4 = 4; 
 int Pin5 = 5; 
 int Pin6 = 6; 
 int Pin7 = 7; 
-int val;
+//OPÇÕES
+int val; 
 
 void setup(){
     Serial.begin(9600);
