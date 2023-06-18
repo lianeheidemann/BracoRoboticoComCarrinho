@@ -2,7 +2,6 @@
 
 Servo myservo1; //Abre e fecha GARRA
 Servo myservo2; //Sobe e dece BRAÇO
-int pos = 0;
 int servo1 = 100; //Angulo da GARRA
 int servo2 = 80; //Angulo do BRAÇO
 
